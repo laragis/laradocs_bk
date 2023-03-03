@@ -3,21 +3,27 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const npm2yarn = require('@docusaurus/remark-plugin-npm2yarn');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'LaraDocs',
   tagline: 'Dinosaurs are cool',
-  url: 'https://larardocs.netlify.app',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+
+  // Set the production url of your site here
+  url: 'https://your-docusaurus-test-site.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -38,6 +44,12 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          remarkPlugins: [
+            [npm2yarn, {sync: true}],
+          ],
+        },
+        pages: {
+          remarkPlugins: [npm2yarn],
         },
         blog: {
           showReadingTime: true,
@@ -56,10 +68,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'LaraDocs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'LaraDocs Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -68,6 +82,51 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            type: 'doc',
+            docId: 'courses',
+            label: 'Courses',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'dev',
+            label: 'Development',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'db',
+            label: 'Databases',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'devops',
+            label: 'DevOps',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'os',
+            label: 'OS',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'design',
+            label: 'Design',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'gis',
+            label: 'GIS',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'server',
+            label: 'Server',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'editor',
+            label: 'Editor',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
