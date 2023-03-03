@@ -14,6 +14,8 @@ lsb_release -a
 hostnamectl
 ```
 
+
+
 ## Package manager
 ### Cargo
 
@@ -73,4 +75,20 @@ scoop install duf
 ```mdx-code-block
   </TabItem>
 </Tabs>
+```
+
+## Tips
+### Uninstall package
+```shell
+apt-get -y autoremove --purge <PACKAGE>
+```
+
+### Switch user
+```shell
+# Switch to root user
+sudo su
+
+## Switch to user
+su -l ubuntu
+
 ```

@@ -8,6 +8,17 @@ RUN apt-get update -y
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
+RUN apt-get install -y  \
+    iputils-ping telnet \
+    curl wget \
+    bat exa \
+    git vim
+
+RUN apt-get install -y zsh
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUN yes | bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)" && \
+    exec zsh && \
+    zinit self-update
 
 ###########################################################################
 # Laradock non-root user:

@@ -1,7 +1,16 @@
 # Get Started
 
+## First setup
+Turn  Windows fetures on or off
+- Enable `Hyper-V`
+- Enable `Telnet Client`
+- Enable `Windows Subsystem for Linux`
+
 ## Tips
 ### Install Makefile
+### Install composer
+
+### Instal multiple version PHP
 
 
 ### Check available port

@@ -2,5 +2,7 @@
 
 ## Installation
 
+## Setup
+
 ## Tips
 ### Enable SSH
