@@ -1,0 +1,9 @@
+
+
+services:
+  ubuntu:
+    build: .
+    image: ttungbmt/ubuntu
+    tty: true
+
+
