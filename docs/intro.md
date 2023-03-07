@@ -18,7 +18,3 @@ sidebar_position: 1
 - [How To Use PostgreSQL with your Django Application on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-django-application-on-ubuntu-22-04)
 
 
-
-```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
