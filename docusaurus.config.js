@@ -115,6 +115,11 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'testing',
+            label: 'Testing',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'gis',
             label: 'GIS',
           },
