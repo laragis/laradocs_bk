@@ -50,6 +50,18 @@ dj man dumpdata --exclude auth.permission --exclude contenttypes --indent 2 > fi
 dj man loaddata fixtures/db.json
 ```
 
+## Migration
+```shell
+dj man migrate
+dj man makemigrations
+
+dj man showmigrations my_app
+dj man migrate my_app 0010
+
+# Reverse all migrations for an app
+dj man migrate my_app zero
+```
+
 ## FAQs
 ### Fix pip install
 Every time install packages by adding to requirements. You need to 
