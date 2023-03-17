@@ -67,3 +67,6 @@ dj man migrate my_app zero
 Every time install packages by adding to requirements. You need to 
 - Rebuild django image
 - Reload interpreter pycharm by clicking Remote bottom right bar
+
+## Source code
+- https://github.com/ShubhamSarda/IMDB-Clone-DRF
