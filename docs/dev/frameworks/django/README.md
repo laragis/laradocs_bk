@@ -63,6 +63,9 @@ dj man migrate my_app zero
 ```
 
 ## FAQs
+### Fix `exec /app/entrypoint: no such file or directory`
+Convert file CRLF to LF
+
 ### Fix pip install
 Every time install packages by adding to requirements. You need to 
 - Rebuild django image
