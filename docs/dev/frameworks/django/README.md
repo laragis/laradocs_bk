@@ -62,11 +62,15 @@ dj man migrate my_app 0010
 dj man migrate my_app zero
 ```
 
+## Utils
+### Pydash
+- filter_
+
+## Source code
+- https://github.com/ShubhamSarda/IMDB-Clone-DRF
+
 ## FAQs
 ### Fix pip install
 Every time install packages by adding to requirements. You need to 
 - Rebuild django image
 - Reload interpreter pycharm by clicking Remote bottom right bar
-
-## Source code
-- https://github.com/ShubhamSarda/IMDB-Clone-DRF
