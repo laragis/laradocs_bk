@@ -55,6 +55,31 @@ Reload Zsh
 ```shell
 exec zsh
 ```
+
+### Install Python
+
+```shell
+curl https://pyenv.run | bash
+
+# Enviroment setup
+echo '' >> ~/.bashrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+
+# Restart your shell
+exec "$SHELL"
+
+# Check version
+pyenv --version
+
+# List of all available versions
+pyenv install -l | grep " 3.10"
+
+# Install python
+pyenv install 3.10.10
+```
+
 ### Install NodeJS
 
 ## Tips
