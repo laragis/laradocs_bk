@@ -72,6 +72,12 @@ function goto_cdhomestead { set-location "D:\VNTT\SERVER\Homestead" }
 function do_vagrant_up { vagrant up }
 function do_vagrant_destroy_parallel { vagrant destroy --parallel }
 
+function do_ssh_vntts { ssh vntts@180.148.1.190 -i ~/.ssh/id_rsa_becagis }
+function do_ssh_homestead { ssh vagrant@192.168.56.56 -i ~/.ssh/id_rsa_homestead }
+function do_ssh_homestead { ssh vagrant@192.168.56.56 -i ~/.ssh/id_rsa_homestead }
+
+function do_code_docs { code "D:\VNTT\DOC\LaraDocs" }
+
 # Alias (Optional)
 Set-Alias g git
 Set-Alias d docker
@@ -79,6 +85,11 @@ Set-Alias dc docker-compose
 Set-Alias v vagrant
 Set-Alias vu do_vagrant_up
 Set-Alias vdp do_vagrant_destroy_parallel
+
+Set-Alias ssh_vntts do_ssh_vntts
+Set-Alias ssh_homestead do_ssh_homestead
+
+Set-Alias code_docs do_code_docs
 
 Set-Alias cd_server goto_cdserver
 Set-Alias cd_project goto_cdproject
