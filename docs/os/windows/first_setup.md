@@ -9,6 +9,7 @@ Figma
 - Enable Hyper-V, Linux, tenet
 - WSL, Ubuntu
 - Install Chocolatey
+- Setup git, convert LF when clone
 
 
 ## FAQs
