@@ -3,17 +3,22 @@
 ## Setup
 
 Install basic tools
+
 Setup IP
-+ Setup static IP
+- Setup static IP
+
 Setup git username, email
+
 Setup ssh: 
-+ Open port 22
-+ copy publickey to server
-+ Check port open
+- Open port 22
+- copy publickey to server
+- Check port open
+
 Setup ssh-config: github
+
 Setup NAT Port Modem:
-+ Open port 80, 443
-+ Check port open
+- Open port 80, 443
+- Check port open
 
 ## SSH
 
