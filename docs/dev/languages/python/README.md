@@ -34,6 +34,12 @@ sudo update-alternatives --list python3
 sudo update-alternatives --config python3
 ```
 
+In the case you like `python` to refer to `python3`, you can simply install `python-is-python3`
+
+```shell
+sudo apt-get install python-is-python3
+```
+
 ## Install basic
 
 ```shell
