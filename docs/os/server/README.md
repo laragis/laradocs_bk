@@ -54,5 +54,7 @@ ssh -i ~/.ssh/id_rsa_becagis user@host
 
 ```shell title="~/.ssh/config"
 Host github.com
+  Hostname github.com
+  PreferredAuthentications publickey
   IdentityFile ~/.ssh/id_rsa_becagis
 ```
