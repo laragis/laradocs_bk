@@ -21,13 +21,13 @@ Setup Manual IP
 ### Register free domain and DNS 
 
 Service Providers: 
-- [dyndns.org](dyndns.org)
-- [tzo.net](tzo.net)
-- [zoneedit.com](zoneedit.com)
-- [dhs.org](dhs.org)
-- [ez-ip.net](ez-ip.net)
-- [easydns.com](easydns.com)
-- [no-ip.com](no-ip.com)
+- [dyndns.org](http://dyndns.org)
+- [tzo.net](http://tzo.net)
+- [zoneedit.com](http://zoneedit.com)
+- [dhs.org](http://dhs.org)
+- [ez-ip.net](http://ez-ip.net)
+- [easydns.com](http://easydns.com)
+- [no-ip.com](http://no-ip.com)
 
 #### NoIP
 Login to your No-IP account.
