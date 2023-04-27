@@ -53,8 +53,22 @@ ssh -i ~/.ssh/id_rsa_becagis user@host
 ### Config SSH
 
 ```shell title="~/.ssh/config"
-Host github.com
+Host github
   Hostname github.com
   PreferredAuthentications publickey
-  IdentityFile ~/.ssh/id_rsa_becagis
+  IdentityFile ~/.ssh/id_rsa_github
+
+Host vntt
+  Hostname 180.148.1.190
+  User vntts
+  Port 22
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa_vntt
+
+Host root-vntt
+  Hostname 180.148.1.190
+  User root
+  Port 22
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa_vntt
 ```
